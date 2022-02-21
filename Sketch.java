@@ -23,7 +23,6 @@ public class Sketch extends PApplet {
     rect(135,55,20,60);
     
     //house
-    stroke(218,165,32);
     fill(255,255,224);
     rect(120,135,160, 162);
 
