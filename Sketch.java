@@ -2,19 +2,11 @@ import processing.core.PApplet;
 
 public class Sketch extends PApplet {
 	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
   public void settings() {
 	// put your size call here
     size(400, 400);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
     background(255, 192, 203);
  
@@ -31,6 +23,7 @@ public class Sketch extends PApplet {
     rect(135,55,20,60);
     
     //house
+    stroke(218,165,32);
     fill(255,255,224);
     rect(120,135,160, 162);
 
