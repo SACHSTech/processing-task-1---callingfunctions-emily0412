@@ -15,20 +15,44 @@ public class Sketch extends PApplet {
   public void draw() {
     
     //outline around shapes
-    stroke(218,165,32);
+    stroke(218, 165, 32);
     strokeWeight(3);
 
+    //back hill 
+    fill(221,160,221);
+    noStroke();
+    beginShape();
+    curveVertex(460,  300);
+    curveVertex(460,  300);
+    curveVertex(352,  50);
+    curveVertex(200,  106);
+    curveVertex(30, 300);
+    curveVertex(30, 300);
+    endShape();
+
+    //front hill
+    fill(147,112,21);
+    noStroke();
+    beginShape();
+    curveVertex(300,  300);
+    curveVertex(300,  300);
+    curveVertex(160,  70);
+    curveVertex(30,  106);
+    curveVertex(-50, 300);
+    curveVertex(-50, 300);
+    endShape();
+
     //chimney
-    fill(218,165,32);
-    rect(135,55,20,60);
+    fill(218, 165, 32);
+    rect(135, 55, 20, 60);
     
     //house
-    fill(255,255,224);
-    rect(120,135,160, 162);
+    fill(255, 255, 224);
+    rect(120, 135, 160, 162);
 
     //roof
-    fill(255,255,224);
-    triangle(95,135,200,50,305,135);
+    fill(255, 255, 224);
+    triangle(95, 135, 200, 50, 305, 135);
 
     //window
     fill(204, 259, 255);
@@ -36,22 +60,28 @@ public class Sketch extends PApplet {
 
     //door
     fill(255);
-    rect(210,235,40, 62);
+    rect(210, 235, 40, 62);
 
     //doorknob
-    fill(165,42,42);
+    fill(165, 42, 42);
     noStroke();
     ellipse(240, 265, 7, 7);
 
+    //ground colour
+    fill(196, 164, 132);
+    noStroke();
+    rect(0, 294, 400, 294);
+
     //ground first line
-    stroke(165,42,42);
+    stroke(165, 42, 42);
     strokeWeight(7);
     line(70, 300, 330, 300);
     
     //ground second line
-    stroke(165,42,42);
+    stroke(165, 42, 42);
     strokeWeight(7);
     line(100, 330, 300, 330);
+
  
   }
   
