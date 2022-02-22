@@ -8,18 +8,14 @@ public class Sketch extends PApplet {
   }
 
   public void setup() {
-    background(255, 192, 203);
+    background(176, 224, 230);
  
   }
 
   public void draw() {
-    
-    //outline around shapes
-    stroke(218, 165, 32);
-    strokeWeight(3);
 
     //back hill 
-    fill(221,160,221);
+    fill(177, 156, 217);
     noStroke();
     beginShape();
     curveVertex(460,  300);
@@ -31,7 +27,7 @@ public class Sketch extends PApplet {
     endShape();
 
     //front hill
-    fill(147,112,21);
+    fill(147, 112, 219);
     noStroke();
     beginShape();
     curveVertex(300,  300);
@@ -43,23 +39,33 @@ public class Sketch extends PApplet {
     endShape();
 
     //chimney
-    fill(218, 165, 32);
+    stroke(170, 64, 105);
+    strokeWeight(3);
+    fill(168, 81, 110);
     rect(135, 55, 20, 60);
     
     //house
-    fill(255, 255, 224);
+    stroke(241, 156, 187);
+    strokeWeight(3);
+    fill(250, 218, 221);
     rect(120, 135, 160, 162);
 
     //roof
-    fill(255, 255, 224);
+    stroke(181, 114, 129);
+    strokeWeight(3);
+    fill(217, 134, 149);
     triangle(95, 135, 200, 50, 305, 135);
 
     //window
+    stroke(192, 128, 129);
+    strokeWeight(3);
     fill(204, 259, 255);
     ellipse(200, 175, 30, 30);
 
     //door
-    fill(255);
+    stroke(192, 128, 129);
+    strokeWeight(3);
+    fill(239, 187, 204);
     rect(210, 235, 40, 62);
 
     //doorknob
@@ -68,7 +74,7 @@ public class Sketch extends PApplet {
     ellipse(240, 265, 7, 7);
 
     //ground colour
-    fill(196, 164, 132);
+    fill(163, 193, 173);
     noStroke();
     rect(0, 294, 400, 294);
 
