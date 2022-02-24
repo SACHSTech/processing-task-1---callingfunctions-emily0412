@@ -4,17 +4,17 @@ public class Sketch extends PApplet {
 	
   public void settings() {
 	// put your size call here
-    size(400, 400);
+    size(600, 600);
   }
 
   public void setup() {
-    background(176, 224, 230);
- 
+    background(176, 224, 230)
+    
   }
 
   public void draw() {
 
-    //back hill 
+    // back hill 
     fill(177, 156, 217);
     noStroke();
     beginShape();
@@ -26,7 +26,7 @@ public class Sketch extends PApplet {
     curveVertex(30, 300);
     endShape();
 
-    //front hill
+    // front hill
     fill(147, 112, 219);
     noStroke();
     beginShape();
@@ -38,52 +38,52 @@ public class Sketch extends PApplet {
     curveVertex(-50, 300);
     endShape();
 
-    //chimney
+    // chimney
     stroke(170, 64, 105);
     strokeWeight(3);
     fill(168, 81, 110);
     rect(135, 55, 20, 60);
     
-    //house
+    // house
     stroke(241, 156, 187);
     strokeWeight(3);
     fill(250, 218, 221);
     rect(120, 135, 160, 162);
 
-    //roof
+    // roof
     stroke(181, 114, 129);
     strokeWeight(3);
     fill(217, 134, 149);
     triangle(95, 135, 200, 50, 305, 135);
 
-    //window
+    // window
     stroke(192, 128, 129);
     strokeWeight(3);
     fill(204, 259, 255);
     ellipse(200, 175, 30, 30);
 
-    //door
+    // door
     stroke(192, 128, 129);
     strokeWeight(3);
     fill(239, 187, 204);
     rect(210, 235, 40, 62);
 
-    //doorknob
+    // doorknob
     fill(165, 42, 42);
     noStroke();
     ellipse(240, 265, 7, 7);
 
-    //ground colour
+    // ground colour
     fill(163, 193, 173);
     noStroke();
     rect(0, 294, 400, 294);
 
-    //ground first line
+    // ground first line
     stroke(165, 42, 42);
     strokeWeight(7);
     line(70, 300, 330, 300);
     
-    //ground second line
+    // ground second line
     stroke(165, 42, 42);
     strokeWeight(7);
     line(100, 330, 300, 330);
